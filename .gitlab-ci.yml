@@ -1,0 +1,13 @@
+dev-deployment:
+ variables:
+   GIT_STRATEGY: fetch
+ script:
+   - - bash ~/gitlab/NextJS/nextjs-projectdeploy.sh
+ environment:
+     name: Development
+     url : https://beautibee-ui.dedicateddevelopers.us/
+ tags:
+   - node-docker2
+ only:
+   - dev 
+

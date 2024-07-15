@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as *;
+@import "../abstracts/variable.module";
+
+.container {
+  @include flexDesign(flex, center, center);
+  height: 100vh;
+  text-align: center;
+  .inner {
+    padding: 10px 20px;
+    @include flexDesign(flex, center, center);
+    flex-direction: column;
+    @include color($grey900);
+    a {
+      @include color($grey900);
+      @include font-size(20);
+      font-weight: 800;
+    }
+  }
+}

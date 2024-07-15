@@ -1,0 +1,159 @@
+.jobs_wrapper{
+    margin: 30px 0;
+    .add_jobs{
+        margin: 30px 0;
+        .jobs_input{
+            margin: 10px 0;
+            position: relative;
+            img{
+                position: absolute;
+                right: 15px;
+                top: 20px;
+            }
+            input{
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 15px 15px;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: rgb(0 0 0 / 87%);
+                border: 0;
+                width: 100%;
+            }
+            select{
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 18px 15px;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: rgb(0 0 0 / 87%);
+                border: 0;
+                width: 100%;
+            }
+            textarea{
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 15px 15px;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: rgb(0 0 0 / 87%);
+                border: 0;
+                width: 100%;
+                resize: none;
+                height: 100px;
+            }
+        }
+        .date_time_input{
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            :global(.MuiFormControl-root) { 
+                width: 100%;
+                background: #FFFFFF;
+                border-radius: 10px;
+                max-width: 300px;
+                width: 100%;
+                margin: 0 10px 0 0 ;
+                // :global(.MuiFormLabel-root) { 
+                //     display: none;
+                // }
+                // :global(.MuiFormLabel-root) { 
+                //     display: none;
+                // }
+                 :global(.MuiOutlinedInput-notchedOutline) { 
+                    border: 0;
+                }
+            }
+            input{
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 15px 15px;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #7D7D7D;
+                border: 0;
+                width: 98%;
+                margin: 0 10px 0 0;
+            }
+        }
+        .job_location{
+            margin: 30px 0;
+            h2{
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+        }
+        .upload_image{
+            margin: 30px 0;
+            h2{
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                li{
+                    flex-basis: 10%;
+                    max-width: 10%;
+                    padding: 10px 15px;
+                    @media screen and (max-width: 767px) {
+                        flex-basis: 100%;
+                        max-width: 100%;
+                    }
+                    input{
+                        width: 95px;
+                        background: #fff;
+                        height: 105px;
+                        opacity: 0;
+                        z-index: 9;
+                    }
+                    img{
+                        color: transparent;
+                        position: absolute;
+                        background-color: #fff;
+                        padding: 40px;
+                        width: 95px;
+                        height: 105px;
+                        border-radius: 12px;
+                        @media screen and (max-width: 767px) {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            button{
+                background: #000000;
+                border-radius: 10px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                text-align: center;
+                color: #FFFFFF;
+                border: 0;
+                padding: 10px 30px;
+                margin: 20px 0 0 0 ;
+                border: 2px solid #000000;
+                &:hover{
+                    border: 2px solid #000000;
+                    color: #000000;
+                    background-color: transparent;
+                }
+            }
+        }
+
+    }
+}
+.select_box{
+    position: relative;
+}

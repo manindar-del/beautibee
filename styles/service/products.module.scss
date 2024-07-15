@@ -1,0 +1,204 @@
+
+.mainwraper{
+    padding: 50px 0;
+    .heading_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button{
+            background: #F2A100;
+            border-radius: 8px;
+            border: 0;
+            padding: 15px 30px;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            color: #000000;
+            border: 2px solid #F2A100;
+            &:hover{
+                border: 2px solid #F2A100;
+                background: transparent;
+            }
+        }
+    }
+    .header_search_bar{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+        .search_field {
+            position: relative;
+            flex-basis: 700px;
+            max-width: 700px;
+            margin: 30px 20px 30px 0;
+            box-shadow: 0px 4px 14px rgb(0 0 0 / 3%);
+            border-radius: 20px;
+            @media screen and (max-width: 991px) {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin: 30px 15px 30px 0;
+            }
+            input {
+              background: #ffffff;
+              border: none;
+              border-radius: 8px;
+              width: 100%;
+              padding: 21px 21px 21px 50px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #000;
+              border-radius: 10px;
+        
+              &::placeholder {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #c4c4c4;
+              }
+            }
+        
+            button {
+              position: absolute;
+              top: 22px;
+              left: 18px;
+              padding: 0;
+              min-width: auto;
+            }
+        }
+        .select_cat{
+            display: flex;
+            align-items: center;
+            flex-basis: calc(100% - 600px);
+            max-width: calc(100% - 600px);
+            @media screen and (max-width: 991px) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+            label{
+                font-weight: 600;
+                font-size: 14px;
+                color: #000000;
+                flex-basis: 120px;
+                max-width: 120px;
+                margin: 0 10px 0 0;
+            }
+            select{
+                padding: 15px 16px;
+                width: 100%;
+                font-weight: 500;
+                font-size: 14px;
+                background: url(../../public/assets/images/arwdown.svg) no-repeat right 15px center #fff;
+                border: 1px solid #E6E6E6;
+                border-radius: 10px;
+                background-size: 10px;
+                flex-basis: calc(100% - 120px);
+            }
+        }
+    }
+    .listing_sec{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        li{
+            flex-basis: 20%;
+            max-width: 20%;
+            padding: 10px 15px;
+            @media screen and (max-width: 991px) {
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+            @media screen and (max-width: 500px) {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+            .listing_box{
+                position: relative;
+                background: #FFFFFF;
+                border: 1px solid #E4E4E4;
+                border-radius: 10px;
+                padding: 21px;
+                .productimg{
+                    background: #E7EDFF;
+                    border-radius: 10px 10px 10px 10px;
+                    padding: 31px 20px;
+                    text-align: center;
+                    margin: 0 0 20px 0;
+                    img{
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                        &::after{
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+                            border-radius: 8px;
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .cont_box{
+                    h2{
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #000000;
+                        margin: 10px 0 5px 0;
+                    }
+                    h3{
+                        font-weight: 400;
+                        font-size: 10px;
+                        color: #3F3D56;
+                        margin: 5px 0 5px 0;
+                    }
+                    h4{
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: #F2A100;
+                        margin: 20px 0;
+                    }
+                    .plusicon{
+                        background: #F4BC00;
+                        backdrop-filter: blur(12px);
+                        border-radius: 520px;
+                        color: #000;
+                        font-size: 20px;
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        right: 10px;
+                        text-align: center;
+                        bottom: 20px;
+                        padding: 2px 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.productimg
+{
+    min-height: 221px;
+}
+
+.loadmore{
+    background: #000000;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 30px auto 0;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(132.69deg, #F4BC00 0%, #EF9F00 77.71%);
+    }
+  }

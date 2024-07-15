@@ -1,0 +1,120 @@
+.header_search_bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .search_field {
+        position: relative;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 10px 0 39px;
+        box-shadow: 0px 4px 14px rgb(0 0 0 / 3%);
+        border-radius: 20px;
+        input {
+          background: #ffffff;
+          border: none;
+          border-radius: 8px;
+          width: 100%;
+          padding: 21px 21px 21px 50px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #000;
+          border-radius: 10px;
+    
+          &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #c4c4c4;
+          }
+        }
+    
+        button {
+          position: absolute;
+          top: 22px;
+          left: 18px;
+          padding: 0;
+          min-width: auto;
+        }
+    }
+    .select_cat{
+        display: flex;
+        align-items: center;
+        label{
+            font-weight: 600;
+            font-size: 14px;
+            color: #000000;
+            width: 200px;
+            margin: 0 10px 0 0;
+        }
+        select{
+            padding: 22px 26px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 16px;
+            background: url(../../public/assets/images/arwdown.svg) no-repeat right 15px center #fff;
+            border: 1px solid #E6E6E6;
+            border-radius: 10px;
+        }
+    }
+}
+.accordian_bar{
+    // box-shadow: 0px 4px 14px rgb(0 0 0 / 3%);
+    // background: #fff;
+    :global(.MuiAccordion-root) {
+        background: transparent;
+        box-shadow: none;
+        border: 1px solid #eee;
+        margin: 10px 0;
+        &::after{
+            content: "+";
+            position: absolute;
+            right: 22px;
+            top: 0;
+            background: #fff;
+            width: 30px;
+            height: 40%;
+            text-align: center;
+            padding: 15px;
+            @media screen and (max-width: 991px) {
+                height: 15%;
+            }
+        }
+    }
+    :global(.MuiCollapse-entered) {
+       
+            &::after{
+                content: "-";
+                position: absolute;
+                right: 22px;
+                top: 0;
+                background: #fff;
+                width: 30px;
+                height: 40%;
+                text-align: center;
+                padding: 15px;
+                z-index: 9;
+                @media screen and (max-width: 991px) {
+                    height: 15%;
+                }
+            }
+        
+    }
+    :global(.MuiSvgIcon-fontSizeMedium) {
+        display: none;
+    }
+
+    :global(.MuiAccordionSummary-expandIconWrapper) {
+        ::after{
+            display: none!important;
+        }
+    }
+    :global(.MuiAccordionSummary-root) {
+        box-shadow: 0px 4px 14px rgb(0 0 0 / 3%);
+        background: #fff;
+       
+    }
+}

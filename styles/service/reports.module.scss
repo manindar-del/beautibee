@@ -1,0 +1,124 @@
+.mainwraper {
+  padding: 50px 0;
+  .heading_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      background: #f2a100;
+      border-radius: 8px;
+      border: 0;
+      padding: 15px 30px;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #000000;
+      border: 2px solid #f2a100;
+      &:hover {
+        border: 2px solid #f2a100;
+        background: transparent;
+      }
+    }
+  }
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 767px) {
+      margin: 10px 0;
+    }
+    :global(.MuiFormControl-root) {
+      width: 100%;
+      background: #ffffff;
+      border-radius: 10px;
+      max-width: 270px;
+      width: 100%;
+      // :global(.MuiFormLabel-root) {
+      //     display: none;
+      // }
+      // :global(.MuiFormLabel-root) {
+      //     display: none;
+      // }
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border: 0;
+      }
+    }
+    input {
+      background: #ffffff;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #7d7d7d;
+      padding: 15px 20px;
+      border: 0;
+      margin: 0 30px;
+      max-width: 252px;
+      width: 100%;
+    }
+    p {
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #000000;
+      margin: 0 30px;
+    }
+  }
+  .map_listing {
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.11);
+    border-radius: 16px;
+    padding: 20px 20px;
+    margin: 50px 0;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 767px) {
+          margin: 10px 0;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          color: #666a74;
+        }
+        img {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+  }
+  img {
+    height: auto;
+  }
+  .download_chart {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0;
+    img {
+      margin: 5px 10px 0 0;
+    }
+    p {
+      color: #f05742;
+    }
+  }
+}
+
+.service_input {
+  select {
+    padding: 11px 16px;
+    border-radius: 5px;
+    border: 1px solid #f4bc00;
+  }
+}
+
+.menu_download_second_chart {
+  margin-top: 70px;
+}

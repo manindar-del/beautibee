@@ -1,0 +1,22 @@
+@import '../abstracts/variable.module';
+
+.button {
+  background: #FFFFFF;
+    box-shadow: 0px 14px 24px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    padding: 16px 23px;
+    @media screen and (max-width: 767px) {
+      font-size: 11px;
+      line-height: 12px;
+      padding: 10px 10px;
+    }
+    &:hover{
+      background-color: #f3a802;
+      color: #fff;
+    }
+}

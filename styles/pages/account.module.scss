@@ -1,0 +1,169 @@
+.pageAccount {
+  margin-left: 15px;
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
+  }
+
+  .userTopColumn {
+    background: #FFFFFF;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 13px;
+
+    .uploadUserImg {
+      position: relative;
+
+      figure {
+        img {
+          object-fit: cover;
+          border-radius: 50%;
+          border: 2px solid rgba(242, 161, 0, 0.45);
+        }
+      }
+
+      .customUploadWrap {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+
+        input {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .btnUpload {
+          width: 30px;
+          height: 30px;
+          background: #F2A100;
+          box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+          border-radius: 50px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 7px;
+          cursor: pointer;
+          position: relative;
+
+          :global(.MuiSvgIcon-root) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .usersInfo {
+      padding-left: 22px;
+      @media screen and (max-width: 767px) {
+        padding-left: 0px;
+      }
+
+      h4 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #949494;
+      }
+    }
+  }
+
+  .accountForm {
+    background: #FFFFFF;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding: 30px;
+
+    .formGroup {
+      margin-bottom: 16px;
+
+      textarea{
+        width: 100%;
+          padding: 17px;
+          background: #4219190f;
+          border: 0px;
+          border-radius: 8px;
+      }
+
+      label {
+        font-weight: 500;
+        font-size: 16px;
+        color: #949494;
+        margin-bottom: 12px;
+        display: block;
+      }
+
+      input {
+        height: 50px;
+        border-radius: 16px;
+        padding: 13px 26px;
+        width: 100%;
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      :global(.MuiInputBase-root:before),
+      :global(.MuiInputBase-root:after) {
+        display: none;
+      }
+
+      :global(.MuiFormControl-root),
+      :global(.MuiInputBase-root) {
+        display: flex;
+        border-radius: 16px;
+        background: #F2F2F2;
+      }
+
+      :global(.MuiOutlinedInput-notchedOutline) {
+        display: none;
+      }
+
+      :global(.MuiInputAdornment-root) {
+        height: auto;
+      }
+
+      :global(.MuiFormLabel-root) {
+        display: none;
+      }
+
+      select {
+        height: 50px;
+        border-radius: 16px;
+        padding: 13px 26px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        border: none;
+        background: url(../../public/assets/images/arwdown.svg) no-repeat right 15px center #F2F2F2;
+      }
+
+      .btnSave {
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: capitalize;
+        background: #F2A100;
+        border-radius: 50px;
+        min-width: 140px;
+        padding: 16px;
+        border: 1px solid #F2A100;
+
+        &:hover {
+          border: 1px solid #000;
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+

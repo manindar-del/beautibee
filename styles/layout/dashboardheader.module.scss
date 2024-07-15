@@ -1,0 +1,219 @@
+.dash_header {
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 0 15px;
+  position: relative;
+
+  .header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+    }
+    .logo {
+      cursor: pointer;
+      img {
+        @media screen and (max-width: 767px) {
+          height: 60px;
+        }
+      }
+    }
+
+    .search_field {
+      position: relative;
+      flex-basis: 30%;
+      max-width: 30%;
+      margin: 0 30px;
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 0;
+      }
+      input {
+        background: #ffffff;
+        border: 1px solid #ededed;
+        border-radius: 8px;
+        width: 100%;
+        padding: 21px 21px 21px 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000;
+        @media screen and (max-width: 767px) {
+          padding: 10px 21px 10px 50px;
+        }
+
+        &::placeholder {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #c4c4c4;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 22px;
+        right: 18px;
+        padding: 0;
+        min-width: auto;
+        @media screen and (max-width: 767px) {
+          top: 10px;
+        }
+      }
+    }
+
+    .headerLink {
+      padding-left: 45px;
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          &:not(:last-child) {
+            margin-right: 35px;
+          }
+
+          a {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            position: relative;
+
+            &::before {
+              position: absolute;
+              content: "";
+              bottom: 0;
+              left: 50%;
+              transition: 0.3s all ease-in-out 0s;
+              bottom: 0;
+              width: 0;
+              height: 1px;
+              background: #f4bc00;
+            }
+
+            &:hover {
+              color: #f4bc00;
+
+              &::before {
+                width: 100%;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .beauti_btn {
+      margin-left: auto;
+      background: #ffffff;
+      border: 1px solid #d8d8d8;
+      border-radius: 10px;
+      padding: 16px 23px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #000000;
+      margin-right: 10px;
+      @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+        padding: 16px 6px;
+        font-size: 11px;
+      }
+      @media screen and (max-width: 767px) {
+        padding: 10px 23px;
+        margin: 5px 0;
+        width: 100%;
+      }
+
+      &:hover {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    }
+
+    .cart {
+      width: 40px;
+      height: 40px;
+      background: #f4bc00;
+      border: 2px solid #f4bc00;
+      backdrop-filter: blur(12px);
+      border-radius: 50%;
+      min-width: auto;
+      margin: 0 0 0 15px;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .logout {
+      width: 40px;
+      height: 40px;
+      background: #f4bc00;
+      border: 2px solid #f4bc00;
+      backdrop-filter: blur(12px);
+      border-radius: 50%;
+      min-width: auto;
+      margin: 0 0 0 15px;
+
+      &:hover {
+        background-color: #000;
+        border: 2px solid #000;
+      }
+    }
+
+    .user_btn {
+      margin: 0;
+      padding: 0;
+      @media screen and (max-width: 767px) {
+        margin: 0;
+      }
+
+      img {
+        border: 2px solid #ffd6d6;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.humberger_menu {
+  display: none;
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+  :global(.MuiSvgIcon-root) {
+    @media screen and (max-width: 991px) {
+      color: #000;
+    }
+  }
+}
+
+.mobile_menu {
+  li {
+    width: 100%;
+    padding: 10px 30px;
+    a {
+      color: #000;
+    }
+  }
+}
+.carts_quantity {
+  position: absolute;
+  top: -4px;
+  right: 10px;
+  color: #000;
+  font-size: 12px;
+}

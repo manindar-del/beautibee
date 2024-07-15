@@ -1,0 +1,166 @@
+.product_details_wrapper{
+    padding: 50px 0 126px;
+    .product_slider{
+        position: relative;
+        .img_box{
+            img{
+                border-radius: 5px;
+                @media screen and (max-width: 991px) {
+                    height: auto;
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+        .slick-next{
+            @media screen and (max-width: 991px) {
+                right: 0;
+                display: none;
+            }
+
+        }
+        :global(.slick-arrow) {
+            display: none!important;
+        }
+        :global(.slick-dots) {
+            position: absolute;
+            bottom: 25px;
+            li {
+                margin: 0;
+               button {
+                    background: rgba(255, 255, 255, 0.5);
+                    backdrop-filter: blur(27px);
+                    border-radius: 10px;
+                    width: 14px;
+                    height: 5px;
+                    margin: 0 auto;
+                    &::before{
+                        display: none;
+                    }
+                }
+                &:global(.slick-active){
+                    button{
+                        background: #F4BC00 !important;
+                        width: 21px;
+                    }
+                }
+            }
+        }
+        .back_button{
+            position: absolute;
+            top: 30px;
+            left: 22px;
+            z-index: 9;
+            background: transparent;
+            border: none;
+        }
+    }
+
+    .product_details{
+        padding: 0 0 0 57px;
+        @media screen and (max-width: 991px) {
+            padding: 0;
+        }
+        h5{
+            font-weight: 500;
+            font-size: 18px;
+            color: #000000;
+            margin: 0 0 12px;
+            line-height: 1.5;
+        }
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #555555;
+            margin: 0 0 10px;
+        }
+        h3{
+            font-weight: 500;
+            font-size: 24px;
+            color: #F2A100;
+            margin: 0 0 10px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            margin: 0 0 10px;
+        }
+        .quantity_wrapper {
+            background: #FFFFFF;
+            border: 1px solid #FCFCFC;
+            box-shadow: 0px 2px 34px rgba(0, 0, 0, 0.13);
+            border-radius: 10px;
+            padding: 17px 19px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 303px;
+            margin: 25px 0;
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                color: #555555;
+                margin: 0;
+            }
+            .quantity_wrapper_button{
+                display: flex;
+                align-items: center;                
+                p{
+                    font-weight: 500;
+                    font-size: 16px;
+                    text-align: center;
+                    color: #F2A100;
+                    margin: 0 12px;
+                }
+                button{
+                    background: #FFFFFF;
+                    border: 1px solid #E7E7E7;
+                    border-radius: 80px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .button_group{
+            button{
+                background: #FFFFFF;
+                border: 1px solid #000000;
+                border-radius: 10px;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                color: #000000;
+                padding: 17px 36px;
+                min-width: 157px;
+                margin: 0 20px 0 0;
+                @media screen and (max-width: 767px) {
+                    min-width: 100px;
+                    padding: 17px 30px;
+                }
+                &:hover{
+                    background: #F2A100;
+                    color: #fff;
+                    border: 1px solid #F2A100;
+                }
+
+                &.active{
+                    background: #F2A100;
+                    color: #fff;
+                    border: 1px solid #F2A100;
+                    &:hover{
+                        background: #FFFFFF;
+                        border: 1px solid #000;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

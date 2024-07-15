@@ -1,0 +1,159 @@
+.jobs_wrapper {
+  margin: 30px 0;
+  .add_jobs {
+    margin: 30px 0;
+    .jobs_input {
+      margin: 10px 0;
+      position: relative;
+      img {
+        position: absolute;
+        right: 15px;
+        top: 16px;
+      }
+      input {
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 15px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: rgb(0 0 0 / 87%);
+        border: 0;
+        width: 100%;
+      }
+      select {
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 15px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: rgb(0 0 0 / 87%);
+        border: 0;
+        width: 100%;
+      }
+      textarea {
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 15px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: rgb(0 0 0 / 87%);
+        border: 0;
+        width: 100%;
+        resize: none;
+        height: 100px;
+      }
+    }
+    .date_time_input {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      input {
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 15px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #7d7d7d;
+        border: 0;
+        width: 98%;
+        margin: 0 10px 0 0;
+      }
+    }
+    .job_location {
+      margin: 30px 0;
+      h2 {
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #000000;
+      }
+    }
+    .upload_image {
+      margin: 30px 0;
+      h2 {
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: #000000;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        li {
+          flex-basis: 50%;
+          max-width: 50%;
+          padding: 10px 15px;
+          position: relative;
+          input {
+            width: 96%;
+            background: #fff;
+            height: 100%;
+            opacity: 0;
+            z-index: 9;
+            position: absolute;
+            top: 0;
+          }
+          img {
+            // width: 100%;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      button {
+        background: #000000;
+        border-radius: 10px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+        border: 0;
+        padding: 10px 70px;
+        margin: 20px 0 0 0;
+        border: 2px solid #000000;
+        &:hover {
+          border: 2px solid #000000;
+          color: #000000;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.custom_choose_file {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #7d7d7d;
+    line-height: 30px;
+  }
+}
+.select_box {
+  position: relative;
+}
+.form_image_sec_studio {
+  display: flex;
+  .card_service {
+    img {
+      width: 100px!important;
+      height: 100px!important;
+    }
+  }
+}
+.img_space_studio {
+  margin: 10px;
+}

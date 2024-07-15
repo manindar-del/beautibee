@@ -1,0 +1,39 @@
+.leftSideBar {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 38px;
+
+    ul {
+        li {
+            padding-bottom: 24px;
+
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.01em;
+                color: #373435;
+                width: 100%;
+            }
+
+            &.active {
+                a {
+                    font-weight: 600;
+                    color: #F2A100;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background: #F2A100;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+.footer {
+    background: #FAFAFA;
+    box-shadow: inset 0px 24px 34px rgba(198, 198, 198, 0.1);
+    padding: 140px 0 60px 0;
+    @media screen and (max-width: 767px) {
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    .FooterLinks {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        ul {
+            padding: 0 20px;
+            @media screen and (max-width: 767px) {
+                padding: 0 20px;
+                text-align: left;
+                width: 50%;
+            }
+            li {
+                a {
+                    display: inline-block;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #000000;
+
+                    &:hover {
+                        color: #F4BC00;
+                    }
+                }
+
+                &:not(:last-child) {
+                    padding-bottom: 8px;
+                }
+                &.active{
+                    a{
+                        color: #F4BC00;
+                    }
+                }
+            }
+        }
+    }
+
+    .FooterApp {
+        background: #FFFFFF;
+        border: 1px solid #FFF0F0;
+        border-radius: 10px;
+        padding: 25px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #353535;
+        }
+
+        .getApp {
+            padding-top: 20px;
+            display: flex;
+            @media screen and (max-width: 767px) {
+                align-items: center;
+                justify-content: center;
+            }
+            a {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                    display: inline-block;
+                    @media screen and (max-width: 767px) {
+                        margin-right: 0px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottomFooter {
+    .dflexBetween {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 767px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            li {
+                a {
+                    color: #F4BC00;
+                    display: inline-block;
+
+                    &:hover {
+                        color: #000000;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+                text-align: center;
+                margin: 0 0 20px 0;
+            }            
+        }
+    }
+}
+.FooterLogo{
+    @media screen and (min-device-width: 768px) and (max-device-width: 992px) { 
+        text-align: center;
+    }
+
+}

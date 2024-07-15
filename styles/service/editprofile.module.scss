@@ -1,0 +1,286 @@
+.jobs_wrapper {
+  margin: 30px 0 50px 0;
+  .heading_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      background: #f2a100;
+      border-radius: 8px;
+      border: 0;
+      padding: 15px 30px;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #000000;
+      border: 2px solid #f2a100;
+      &:hover {
+        border: 2px solid #f2a100;
+        background: transparent;
+      }
+    }
+  }
+  .messages {
+    max-width: 392px;
+    margin: 0 auto;
+  }
+  .edit_profile_sec {
+    margin: 30px 0;
+    background: #ffffff;
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+
+    .edit_profile_sec_left {
+      margin: 0 20px 0 0;
+      .camera_icon {
+        background: #f2a100;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+      }
+      .uploadUserImg {
+        position: relative;
+
+        figure {
+          img {
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(242, 161, 0, 0.45);
+          }
+        }
+
+        .customUploadWrap {
+          position: absolute;
+          right: 0;
+          bottom: 5px;
+
+          input {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
+
+          .btnUpload {
+            width: 30px;
+            height: 30px;
+            background: #f2a100;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+            border-radius: 50px;
+            color: #ffffff;
+            text-align: center;
+            padding: 7px;
+            cursor: pointer;
+            position: relative;
+
+            :global(.MuiSvgIcon-root) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .edit_profile_sec_right {
+      h2 {
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #000000;
+        line-height: 40px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        color: #949494;
+      }
+    }
+  }
+  .form_sec {
+    margin: 5px 0;
+    position: relative;
+    :global(.MuiFormControl-root) {
+      width: 100%;
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #00000026;
+      :global(.MuiFormLabel-root) {
+        display: none;
+      }
+      :global(.MuiFormLabel-root) {
+        display: none;
+      }
+      :global(.MuiOutlinedInput-notchedOutline) {
+        border: 0;
+      }
+    }
+    .downarrow {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+    }
+    label {
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: capitalize;
+      color: #000000;
+      margin: 0 0 10px 0;
+    }
+    input {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 0;
+      padding: 15px;
+      width: 100%;
+      margin: 0;
+      border: 1px solid #0000002b;
+    }
+    select {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 0;
+      padding: 15px;
+      width: 100%;
+      margin: 0;
+      border: 1px solid #0000002b;
+    }
+    textarea {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 0;
+      padding: 15px;
+      width: 100%;
+      margin: 5px 0 0 0;
+      height: 100px;
+      resize: none;
+      border: 1px solid #0000002b;
+    }
+    .submit_btn {
+      background: #000000;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      padding: 15px 0;
+      border: 2px solid #000;
+      max-width: 300px;
+      width: 100%;
+      @media screen and (max-width: 991px) {
+        max-width: 100px;
+      }
+      &:hover {
+        border: 2px solid #000;
+        color: #000;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.form_image_sec {
+  display: flex;
+  .card_service {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.img_space {
+  margin: 5px;
+}
+.form_sec_form {
+  input {
+    width: 100%;
+    background: #fff;
+    height: 100%;
+    opacity: 0;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    display: flex;
+  }
+}
+.form_sec_form {
+  img {
+    width: 100%;
+  }
+}
+
+.formGroups {
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 0 0 10px 0;
+  }
+}
+.file_delete {
+  text-align: right;
+  button {
+    background: #f4bc00;
+    border: 1px solid #000;
+    border-radius: 2px;
+    img {
+      width: 12px !important;
+      height: 12px !important;
+    }
+  }
+}
+.weekandtime {
+  margin-top: 110px;
+}
+.week_update {
+  margin-top: 20px;
+}
+.week_update {
+  .time_picker {
+    input{
+      height: 36px;
+    }
+    label{
+      &:global(.MuiFormLabel-root){
+        &:global(.MuiInputLabel-root){
+          transform: translate(14px, 16px) scale(1);
+          &:global(.Mui-focused){
+            transform: translate(14px, -9px) scale(.75);
+          }
+          &:global(.MuiInputLabel-shrink){
+            transform: translate(14px, -9px) scale(.75);
+          }
+        }
+      }
+    }
+   
+  }
+}
+.week_update{
+  :global(.MuiFormControl-root) { 
+    width: 100%;
+  }
+}
+
+.total_flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  > *{
+    padding: 0 5px;
+  }
+    .week_update{
+      width: 90%;
+    }
+    .remove_btn{
+      width: 10%;
+      margin-top: 20px;
+    }
+}

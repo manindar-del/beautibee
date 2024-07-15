@@ -1,0 +1,195 @@
+.heading_sec {
+  padding: 20px 25px;
+  h3 {
+    margin: 0 0 20px 0;
+  }
+  :global(.MuiTabs-indicator) {
+    background: #f2a100;
+  }
+  :global(.Mui-selected) {
+    color: #000;
+  }
+  :global(.MuiTabs-flexContainer) {
+    border-bottom: 2px solid #eee;
+  }
+}
+.listing_sec {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  li {
+    flex-basis: 20%;
+    max-width: 20%;
+    padding: 10px 15px;
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+    .listing_box {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      }
+      img {
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          height: auto;
+        }
+        &::after {
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            #000000 100%
+          );
+          border-radius: 8px;
+          content: "";
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .cont_box {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        @media screen and (max-width: 767px) {
+          bottom: 50px;
+          top: inherit;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 8px;
+          color: #ffffff;
+          position: absolute;
+          top: 130px;
+          left: 10px;
+          @media screen and (max-width: 767px) {
+            top: inherit;
+            bottom: 0;
+          }
+
+          font-weight: 500;
+          font-size: 8px;
+          color: #ffffff;
+          position: absolute;
+          bottom: 65px;
+          left: 10px;
+          span {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 6px;
+            padding: 2px 5px;
+            color: #fff;
+            font-size: 10px;
+            img {
+              margin: 0 0 -2px 0;
+              @media screen and (max-width: 767px) {
+                width: auto;
+                height: auto;
+              }
+            }
+          }
+        }
+        h3 {
+          font-weight: 600;
+          font-size: 8px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #f2a100;
+          background: #000;
+          border-radius: 6px;
+          padding: 6px 10px;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          @media screen and (max-width: 767px) {
+            top: inherit;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 10px;
+          color: #ffffff;
+          position: absolute;
+          top: 147px;
+          left: 10px;
+          @media screen and (max-width: 767px) {
+            top: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+.details_sec {
+  position: relative;
+  .imgbox {
+    float: left;
+    margin: 0 20px 0 0;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f2a100;
+    background: #000;
+    border-radius: 6px;
+    padding: 6px 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  h3 {
+    margin: 0 0 10px 0;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.listingmaincontain{
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  overflow-y: scroll;
+.listingmaincon{
+  width: 25%;
+  @media screen and (max-width: 767px) {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 400px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  li {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+  }
+}
+}
+.paginationmainone{
+  ul{ 
+   justify-content: center;
+  }
+}
+.tabContentArea11{
+  border: 0px;
+  height: 500px;
+  
+  overflow-y: scroll;
+
+    
+    /* Handle on hover */
+   
+}  
+                                            

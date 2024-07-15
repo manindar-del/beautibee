@@ -1,0 +1,253 @@
+.pageOrder {
+  .headingH3 {
+    @media screen and (max-width: 767px) {
+      margin: 10px 0;
+    }
+    :global(.MuiSvgIcon-root) {
+      margin: 10px 12px -6px 0;
+    }
+    // svg{
+    //     margin: 10px 12px -6px 0;
+    // }
+  }
+  .btnGroups {
+    @media screen and (max-width: 767px) {
+      margin: 10px 0;
+    }
+    :global(.MuiButtonBase-root) {
+      font-weight: 500;
+      font-size: 16px;
+      color: #000000;
+      padding: 16px 34px;
+      @media screen and (max-width: 767px) {
+        padding: 16px 15px;
+      }
+    }
+
+    :global(.MuiTabs-indicator) {
+      display: none;
+    }
+
+    :global(.Mui-selected) {
+      background: #f2a100;
+      border-radius: 8px;
+    }
+
+    :global(.MuiTabs-flexContainer) {
+      background: #ffffff;
+      border-radius: 8px;
+    }
+  }
+}
+.oredrBox {
+  margin: 0 0 20px 0;
+  :global(.MuiAccordion-root) {
+    background: #fffaef;
+    margin: 0;
+    box-shadow: none;
+    &::before {
+      background: transparent;
+    }
+  }
+  :global(.MuiTypography-body1) {
+    color: #f2a100;
+  }
+  :global(.MuiAccordionSummary-content) {
+    p {
+      color: #f2a100;
+    }
+    svg {
+      color: #f2a100;
+    }
+  }
+  :global(.MuiAccordionDetails-root) {
+    p {
+      color: #000;
+    }
+  }
+  :global(.MuiSvgIcon-root) {
+    color: #f2a100;
+  }
+}
+.topOrderSec {
+  background: #ffffff;
+  border: 1px solid #f4f4f4b8;
+  border-radius: 8px 8px 0px 0px;
+  padding: 20px;
+
+  .top_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    h2 {
+      font-weight: 500;
+      font-size: 14px;
+      color: #000000;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      text-align: right;
+      color: #000000;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+  }
+  .bottom_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+    h4 {
+      background: #f4bc00;
+      border-radius: 8px;
+      padding: 8px 15px;
+      font-weight: normal;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 12px;
+      text-align: right;
+      color: #666666;
+    }
+  }
+}
+.details_lsting {
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  padding: 10px;
+  .left_conts {
+    img {
+      margin: 0 20px 0 0;
+    }
+  }
+  .right_conts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .rating_box {
+      display: flex;
+      h2 {
+        font-weight: 400;
+        font-size: 10px;
+        color: #000000;
+        margin: 0 10px 0 0;
+      }
+      span {
+        font-size: 12px !important;
+        margin: 0px 0 0 0;
+      }
+      h6 {
+        display: flex;
+        margin: 0 0 0 5px;
+        p {
+          margin: -2px 0 0 0;
+        }
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 10px;
+      color: #555555;
+    }
+    .chat_sec {
+      button {
+        background-color: #f4bc00;
+        padding: 8px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      }
+    }
+  }
+}
+.payment_details {
+  h2 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    margin: 30px 0 10px;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    span {
+      color: #f4bc00;
+    }
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #838383;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    span {
+      color: #272931;
+    }
+  }
+  h5 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #272931;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    span {
+      color: #f4bc00;
+    }
+  }
+}
+.dashboradHeadingCom {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 25px;
+}
+.paginationmainone {
+  ul {
+    justify-content: center;
+  }
+}
+.tabContentArea {
+  border: 0px;
+  height: 550px;
+
+  overflow-y: scroll;
+}
+
+.top_booking {
+  margin-bottom: 13px;
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+.booking_cross_sign {
+  position: absolute;
+  right: 9px;
+}

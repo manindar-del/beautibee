@@ -1,0 +1,82 @@
+.subscriptionWrapper {
+  padding: 50px 0;
+  text-align: center;
+  h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 auto 10px;
+    color: #f4bc00;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 auto 10px;
+    color: #383838;
+  }
+
+  .subscriptionBox {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 30px 10px;
+    margin: 20px 0 0;
+    min-height: 397px;
+    h4 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #f4bc00;
+      margin: 0 0 30px;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      color: #161616;
+      margin: 0 0 20px;
+      span {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0 auto 5px;
+      color: #383838;
+    }
+    button {
+      background: #f4bc00;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid #f4bc00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      width: 151px;
+      &:hover {
+        background: #fff;
+        border: 1px solid #f4bc00;
+      }
+    }
+    a {
+      color: #f4bc00;
+      font-weight: bold;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+.cross_sign {
+  .closeicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+.heading_sec {
+  text-align: left;
+}

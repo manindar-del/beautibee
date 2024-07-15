@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["Components/*"],
+      "@/api/*": ["API/*"],
+      "@/config/*": ["CONFIG/*"],
+      "@/hooks/*": ["Hooks/*"],
+      "@/json/*": ["JSON/*"],
+      "@/layout/*": ["LAYOUT/*"],
+      "@/lib/*": ["lib/*"],
+      "@/reduxtoolkit/*": ["ReduxToolkit/*"],
+      "@/styles/*": ["styles/*"],
+      "@/themes/*": ["themes/*"],
+      "@/ui/*": ["ui/*"]
+    }
+  }
+}

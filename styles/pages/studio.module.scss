@@ -1,0 +1,333 @@
+.heading_sec {
+  padding: 20px 25px;
+  h3 {
+    margin: 0 0 20px 0;
+  }
+  :global(.MuiTabs-indicator) {
+    background: #f2a100;
+  }
+  :global(.Mui-selected) {
+    color: #000;
+  }
+  :global(.MuiTabs-flexContainer) {
+    border-bottom: 2px solid #eee;
+  }
+}
+.topOrderSec {
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+  padding: 15px 15px 10px 15px;
+  margin: 0 0 10px 0;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 15px 15px 25px 15px;
+  }
+  // button{
+  //     position: absolute !important;
+  //     left: 10px !important;
+  //     top: 10px !important;
+  // }
+  .top_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    h2 {
+      font-weight: 500;
+      font-size: 14px;
+      color: #000000;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      text-align: right;
+      color: #000000;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+  }
+  .bottom_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+    h4 {
+      background: #f4bc00;
+      border-radius: 8px;
+      padding: 8px 15px;
+      font-weight: normal;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 12px;
+      text-align: right;
+      color: #666666;
+    }
+  }
+}
+.heading_sec {
+  padding: 20px 25px;
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    margin: 0 0 20px 0;
+  }
+  :global(.MuiTabs-scroller) {
+    // border-bottom: 1px solid #ccc;
+  }
+}
+.listing_box {
+  display: flex;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  :global(.slick-slider) {
+    width: 160px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    button {
+      background: #666;
+      backdrop-filter: blur(12.8426px);
+      border-radius: 4.75652px;
+      width: 25px;
+      height: 5px;
+      padding: 3px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+  :global(.slick-dots) {
+    position: absolute;
+    bottom: 5px;
+    width: 88%;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    li {
+      margin: 0;
+      button {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(27px);
+        border-radius: 10px;
+        width: 14px;
+        height: 3px;
+        margin: 0 auto;
+        &::before {
+          display: none;
+        }
+      }
+      &:global(.slick-active) {
+        button {
+          background: #fff !important;
+          width: 21px;
+        }
+      }
+    }
+  }
+  :global(.slick-active) {
+    button {
+      background-color: #fff;
+      width: 25px;
+    }
+  }
+  :global(.slick-arrow) {
+    display: none !important;
+  }
+  .img_box {
+    position: relative;
+    margin: 0 20px 0 0;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+    img {
+      border-radius: 5px;
+      position: relative;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+    // &::before{
+    //     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92) 100%);
+    //     border-radius: 6px;
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 9;
+    // }
+  }
+  .cont_box {
+    h3 {
+      font-weight: 500;
+      font-size: 14px;
+      color: #000000;
+      @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+        max-width: 360px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+    }
+    h4 {
+      background: rgba(242, 161, 0, 0.2);
+      backdrop-filter: blur(12px);
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 10px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #f2a100;
+      position: absolute;
+      padding: 5px 10px;
+      right: 0;
+      top: 0;
+    }
+  }
+  .rating_box {
+    display: flex;
+    background: #fffaef;
+    max-width: 280px;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    .left_cont_box {
+      img {
+        border-radius: 5px;
+        margin: 0 10px 0 0;
+      }
+    }
+    .right_cont_box {
+      h2 {
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        color: #555555;
+        margin: 3px 0 0 0;
+        span {
+          font-size: 12px;
+          color: #000000;
+          margin: 0 0 0 1px;
+          img {
+          }
+        }
+      }
+    }
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #f2a100;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      bottom: -18px;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
+}
+.details_box {
+  padding: 20px;
+  img {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  h3 {
+    margin: 0 0 5px 0;
+  }
+  // p{
+  //     font-size: 14px;
+
+  // }
+}
+.tabContentArea11 {
+  border: 0px;
+  height: 500px;
+
+  overflow-y: scroll;
+
+  /* Handle on hover */
+}
+.paginationmainone {
+  padding-top: 10px;
+  ul {
+    justify-content: center;
+  }
+}
+#simple-tabpanel-0:last-child div {
+  padding-bottom: 0px;
+}
+.tabmainone:last-child div {
+  padding-bottom: 0px;
+}
+.loadmore {
+  background: #000000;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(132.69deg, #f4bc00 0%, #ef9f00 77.71%);
+  }
+}
+//   .topOrderSec{
+//   button{
+//     position: absolute;
+//     left: 10px;
+//     top: 10px;
+//     z-index: 9;
+//   }
+// }
+
+.title_studio {
+  float: left;
+  margin-bottom: 30px;
+}
+
+.chat_studio {
+  float: right;
+  button {
+    background-color: #f4bc00;
+    padding: 16px;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+}
+.chat_studio {
+  .chat_sec {
+    img {
+      margin: 0px;
+    }
+  }
+}
